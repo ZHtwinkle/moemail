@@ -5,7 +5,7 @@ import type { Metadata, Viewport } from "next"
 import { zpix } from "./fonts"
 import "./globals.css"
 import { Providers } from "./providers"
-
+import { FloatMenu } from "@/components/float-menu"
 export const metadata: Metadata = {
   title: "AILab-Email - 临时邮箱服务",
   description: "安全、快速、一次性的临时邮箱地址，保护您的隐私，远离垃圾邮件。支持即时收件，到期自动失效。",
@@ -98,6 +98,7 @@ export default function RootLayout({
             {children}
           </Providers>
           <Toaster />
+          <FloatMenu />
         </ThemeProvider>
       </body>
     </html>
